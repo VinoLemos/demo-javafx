@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <effect>
+      <DropShadow>
+         <input>
+            <Blend />
+         </input>
+         <color>
+            <Color red="0.072470523416996" green="0.07291827350854874" blue="0.07784350216388702" />
+         </color>
+      </DropShadow>
+   </effect>
+   <children>
+      <ComboBox fx:id="comboBoxPerson" layoutX="41.0" layoutY="45.0" onAction="#onComboBoxPersonAction" prefWidth="150.0" promptText="Select a person..." />
+      <Button fx:id="btAll" layoutX="263.0" layoutY="45.0" mnemonicParsing="false" onAction="#onBtAllAction" text="All" />
+   </children>
+</AnchorPane>
